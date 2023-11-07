@@ -2,453 +2,647 @@
 <html lang="en">
 
 <head>
-
-    <!-- ===== TITTLE ===== -->
-    <title>Athun Lal</title>
-
-    <!-- ===== META ===== -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-    <meta name="description" content="Athun's Portfolio." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="images/Letter_A_icon.svg.png" type="image/x-icon">
 
-    <!-- ===== OG ===== -->
-    <meta property="og:title" content="athun's Portfolio" />
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
 
-    <meta property="og:description" content="Athun's Portfolio." />
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- ===== FAVICON ===== -->
-    <link rel="icon" href="assets/img/athun.png" type="image/png" />
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
-    <!-- ===== BOX ICONS ===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <!-- ===== FONT AWESOME ===== -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/style.css">
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
+    <title>Portfolio-Athun Lal</title>
 </head>
 
 <body>
-    <div class="custom-cursor" id="js-cursor">
-        <div class="cursor__small abs-center" id="js-cursor__small"></div>
-        <div class="cursor__big abs-center" id="js-cursor__big"></div>
-        <div class="cursor__big2 abs-center" id="js-cursor__big2"></div>
-    </div>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
 
-
-    <!-- ===== HEADER ===== -->
-    <header class="l-header">
-
-        <!-- ===== NAV BAR ===== -->
-        <nav class="nav bd-grid">
-
-            <div>
-                <a href="#" class="nav__logo curserhover">
-                    <img class="nav__img" id="navlogo">
-                    <p>ATHUN LAL</p>
-                </a>
-            </div>
-
-            <!-- ===== NAV MENU ===== -->
+        <nav class="nav container">
+            <a href="#" class="nav nav__logo">
+                Athun
+            </a>
             <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
 
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active curserhover"></a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link curserhover">About me </a></li>
+                    <li class="nav__items">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-6-line"></i> Home
+                        </a>
+                    </li>
 
+                    <li class="nav__items">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-trophy-line"></i> Skills
+                        </a>
+                    </li>
 
-                    <li class="nav__item"><a href="#skills" class="nav__link curserhover">Skills</a></li>
-                    <li class="nav__item"><a href="#contacto" class="nav__link curserhover">Contact info</a></li>
+                    <li class="nav__items">
+                        <a href="#qualification" class="nav__link">
+                            <i class="ri-book-open-line"></i> Qualification
+                        </a>
+                    </li>
 
-                    <!--<li class="nav__item"><p class="lang curserhover" id="language-button"><b>EN</b></p></li>-->
-                    <li class="nav__item"><i class='bx bxs-moon change-theme curserhover' id="theme-button"></i></li>
+                    <li class="nav__items">
+                        <a href="#services" class="nav__link">
+                            <i class="ri-briefcase-line"></i> Services
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-image-line"></i> Projects
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-chat-3-line"></i> Contact
+                        </a>
+                    </li>
+
                 </ul>
 
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-fill"></i>
+                </div>
             </div>
-
-            <!-- ===== NAV MENU MOBILE ICON ===== -->
-            <div class="nav__toggle curserhover" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+            <div class="nav__buttons">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
             </div>
-
         </nav>
 
     </header>
 
-    <main class="l-main">
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">
+                        Hi, I'm Athun Lal <br>
+                        <span class="spanh">Golang</span> Developer.. <br>
+                        based in India <br>
+                    </h1>
 
-        <!-- ===== BACKGROUND STARS ===== -->
-        <div>
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-            <div id='stars4'></div>
-        </div>
+                    <div class="home__blob grid">
+                        <div class="home__profile">
+                            <img style="height: 100%; width: 100%;" src="images/Athun.jpeg" alt="home profile">
+                        </div>
 
-        <!-- ===== BACK TO TOP BUTTON ===== -->
-        <button id="back-to-top-btn" class="curserhover"><i class="fas fa-angle-double-up"></i></button>
-
-        <!-- ===== HOME ===== -->
-        <section class="home bd-grid" id="home">
-
-            <!-- ===== TITTLE & CONTACT BUTTON ===== -->
-            <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">ATHUN LAL.</span><br><span
-                        class="ityped"></span><span class="ityped"></span></h1>
-                <a href="#contacto" class="button curserhover2"><i class="far fa-comments"></i> | Contact.</a>
-            </div>
-
-            <!-- ===== SOCIAL ICONS ===== -->
-            <!-- ===== SOCIAL ICONS ===== -->
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/athun-lal-0103631ba/" target="_blank" class="home__social-icon curserhover"><i class='fab fa-linkedin-in'></i></a>
-                <a href="https://www.instagram.com/athun._/" target="_blank" class="home__social-icon curserhover"><i class='fab fa-instagram'
-                        style="font-weight:600;"></i></a>
-                <a href="https://github.com/Athunlal" target="_blank" class="home__social-icon curserhover"><i class='fab fa-github'></i></a>
-
-            </div>
-            <!-- ===== LOGO ===== -->
-            <div class="home__img" id="logo">
-                <img src="assets/img/athun.png" alt="Logo mazood">
-            </div>
-
-
-        </section>
-
-        <!--========== ABOUT ==========-->
-        <section class="send section" id="about">
-
-            <div class="send__container">
-                <div class="bd-container bd-grid">
-                    <div class="send__content">
-                        <h2 class="section-title-center send__title">About me</h2>
-                        <p class="send__description">a mission-driven GoLang developer with a passion for thoughtful
-                            apk, collaboration, and better logic. Focusing on GO, Data Structure and Linux, I’ve always
-                            sought out opportunities and challenges that are meaningful to me and I've never stopped
-                            engaging my passion to help others and solve problems. As a Go developer, I enjoy using my
-                            obsessive attention to detail and my mission-driven work ethics to literally change the
-                            world.</p>
+                        <!-- <img src="images/shape-wawes.svg" alt="" class="home__shape-wawes"> -->
+                        <img src="images/shape-circle.svg" alt="" class="home__shape-circle">
                     </div>
 
-                    <div class="send__img">
-                        <table class="infome">
-                            <tr>
-                                <td class="me"><i class="fas fa-user"></i></td>
-                                <td class="me">
-                                    <p>23 years</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="me"><i class="fas fa-volume-up"></i></td>
-                                <td class="me">
-                                    <p>English , Malayalam , Hindi</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="me"><i class="fas fa-map-marker-alt"></i></td>
-                                <td class="me">
-                                    <p>India</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <!-- ===== CV BUTTON ===== -->
-                <a href="" target="_blank" class="buttoncv curserhover2"><i class="far fa-file-alt"></i> | Resume</a>
-
-            </div>
-
-
-        </section>
-
-        <div class="vl"></div>
-
-        <!--========== QUALIFICATION ==========-->
-        <section class="qualification section send" id="experiencia">
-            <div class="send__container">
-                <h2 class=" section-title-center send__title1 exp">Experience</h2>
-                <p class="section__subtitle span1 exp">My path as a Developer.</p>
-
-                <div class="qualification__container container">
-                    <div class="qualification__tabs">
-                        <div class="qualification__button button--flex qualification__active curserhover"
-                            data-target='#edication'>
-                            <i class="fas fa-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-                        <div class="qualification__button button--flex curserhover" data-target='#experience'>
-                            <i class="fas fa-laptop qualification__icon"></i>
-                            Experience
-                        </div>
-                    </div>
-
-                    <div class="qualification__sections">
-
-                        <!-- Content 1-->
-                        <div class="qualification__content qualification__active" data-content id="edication">
-
-                            <!-- data 1-->
-                            <div class="qualification__data">
-                                <div class="right">
-                                    <h3 class="qualification__title">Bachelor of Technology in Electronic&Communiction
-                                    </h3>
-                                    <span class="qualification__subtitle">Visvesvaraya Technological University (VTU)
-                                        Public university in Belgaum, Karnataka</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2018-2022
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <!-- data 2 -->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-
-                                <div class="left">
-                                    <h3 class="qualification__title">Go Developer-(Intern)</h3>
-                                    <span class="qualification__subtitle">Brototype Bangalore</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2022-2023
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- data 3-->
-                            <div class="qualification__data">
-                                <div class="right">
-                                    <h3 class="qualification__title">Higher Secondary Education</h3>
-                                    <span class="qualification__subtitle">Dr.Ambedkar Government Higher Secondary School
-                                        Kanhangad Kodoth Kerala</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2016-2018
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line"></span>
-                                </div>
-                            </div>
-
-                            <!-- data 4-->
-                            <div class="qualification__data">
-                                <div></div>
-
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <!--<span class="qualification__line"></span>-->
-                                </div>
-
-                                <div class="left">
-                                    <h3 class="qualification__title">Web Developer-(Intern)</h3>
-                                    <span class="qualification__subtitle">Websoft IT Services Private Limited
-                                        Mangalore</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020-2021
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-
-                <!-- ===== Linkedin BUTTON ===== -->
-                <a href="https://www.linkedin.com/in/athun-lal-0103631ba/" target="_blank"
-                    class="buttoncv curserhover2"><i class="fab fa-linkedin-in"></i> | More Info</a>
-
-            </div>
-        </section>
-        <!-- ===== SKILLS ===== -->
-        <section class="work section1" id="skills">
-            <div style="height: 100px; overflow: hidden;background-color: var(--nav-color);"><svg viewBox="0 0 500 150"
-                    preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                        style="stroke: none; fill: var(--wave-color);"></path>
-                </svg></div>
-            <div class="wave send__container3">
-
-                <h2 class="section-title2 section-title-center send__title1">Skills</h2>
-                <p class="section__subtitle span2 exp">Let's talk Technology.</p>
-
-                <!-- ===== SKILLS SLIDER ===== -->
-                <div class="sliderlogo">
-                    <div class="customer-logos">
-
-                        <div class="slide"><img src="assets/img/Go.png" alt="HTML5">
-                            <p>GoLang</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/js.png" alt="JavaScript">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/git.png" alt="Git & GitHub">
-                            <p>Git & GitHub</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/py.png" alt="Python">
-                            <p>Python</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/linux2.png" alt="Python">
-                            <p></p>
-                        </div>
-                        <div class="slide"><img src="assets/img/ds.png" alt="Python">
-                            <p>Data Structure</p>
-                        </div>
-                        <div class="slide"><img src="assets/img/c.png" alt="Python">
-                            <p></p>
-                        </div>
-
-
-
-                        <!-- <div class="slide" ><img src="assets/img/react.png" alt="React"><p>React</p></div> -->
-                        <!-- <div class="slide" ><img src="assets/img/node.png" alt="Node.js & Express.js"><p>Node.js & Express.js</p></div> -->
-                        <!-- <div class="slide" ><img src="assets/img/bootstrap.png" alt="Bootstrap"><p>Bootstrap</p></div>
-                            <div class="slide" ><img src="assets/img/jquery.png" alt="jQuery"><p>jQuery</p></div> -->
-                        <!--<div class="slide" ><img src="assets/img/npm.png" alt="npm"><p>npm</p></div>-->
-                        <!-- <div class="slide" ><img src="assets/img/terminal.png" alt="terminal"><p>Terminal</p></div> -->
-                        <!-- <div class="slide" ><img src="assets/img/css.png" alt="CSS3"><p>CSS3</p></div> -->
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-
-
-        <!--========== CONTACT==========-->
-        <section class="send1 section1 contact " id="contact">
-            <svg viewBox="0 0 1920 163" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path fill="var(--wave-color)"
-                    d="M 0 0 C 388.40000000000003 0 582.5999999999999 110 971 110 L 971 110 L 971 0 L 0 0 Z"
-                    stroke-width="0"></path>
-                <path fill="var(--wave-color)" d="M 970 110 C 1350 110 1540 0 1920 0 L 1920 0 L 1920 0 L 970 0 Z"
-                    stroke-width="0"></path>
-            </svg>
-            <div id="contacto"><br></div>
-
-            <div class="send__container1" id="top">
-                <div class="send__content1 bd-grid  centertxt">
-
-                    <!-- CLOCK STATUS -->
-                    <div class="tarjcont3">
-                        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
-                    </div>
-                    <div class="tarjcont3">
-                        <span class="stat"><i class="fas fa-circle statuscircle" id="circulo"></i></span><span
-                            class="stat" id="status"></span>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="send__container1" id="bottom">
-                <div class="send__content1 bd-grid">
-                    <h2 class="section-title-center send__title1">Contact</h2>
-                    <p class="section__subtitle span1 exp2">Do you have projects in mind..? Let's make it happen! 🙌</p>
-                    <p class="send__description1"> I am open to hear proposals, If you want to work with me.. feel free
-                        to contact, All offers and comments are welcome.
-                    </p>
-
-
-
-                    <!-- TARJETAS DE CONTACTO -->
-                    <div class="tarjcont">
-                        <a href="mailto:athunlalp@gmail.com" class=" tarjeta curserhover2">
-                            <i class="icon fa fa-envelope tar"></i>
-                            <p class="tar mail">athunlalp@gmail.com</p>
+                    <ul class="home__social">
+                        <a href="https://www.linkedin.com/in/athunlal/" target="_blank" class="footer__social-link"
+                            target="_blank" class="home__social-link">
+                            <i class="ri-linkedin-box-line"></i>
                         </a>
 
+                        <a href="https://github.com/Athunlal" target="_blank" class="footer__social-link"
+                            class="home__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <a href="https://instagram.com/athun._?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"
+                            class="footer__social-link" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </ul>
+                </div>
+                <!--==================== HOME INFO ====================-->
+
+                <div class="home__info">
+                    <div>
+
+
+                        <h3 class="home__info-title">
+                            BIOGRAPHY
+                        </h3>
+                        <p class="home__info-discription">
+                            Hi, I'm Athun Lal, then an engineering student,
+                            Now a Golang developer.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            CONTACT
+                        </h3>
+                        <p class="home__info-discription">
+                            Athun Lal, India<br>
+                            athunlalp@gmail.com <br>
+                            +91-8086671618
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            SERVICES
+                        </h3>
+                        <p class="home__info-discription">
+                            Web Developement <br>
+                        </p>
+                    </div>
+                </div>
+                <!--==================== HOME INFO 2====================-->
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">
+                            YEARS OF EXPERIENCE
+                        </h3>
+
+                        <p class="home__info-number">
+                            01+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            COMPLETED PROJECTS
+                        </h3>
+
+                        <p class="home__info-number">
+                            15+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="home__info-title">
+                            CURRENT STATUS
+                        </h3>
+
+                        <p class="home__info-number">
+                            Learning
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <!--Waves Container-->
-            <div>
-                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                    <defs>
-                        <path id="gentle-wave"
-                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                    </defs>
-                    <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="var(--wave1-color)" opacity="0.5" />
-                        <use xlink:href="#gentle-wave" x="48" y="3" fill="var(--wave2-color)" opacity="0.6" />
-                        <use xlink:href="#gentle-wave" x="48" y="5" fill="var(--wave3-color)" opacity="0.7" />
-                        <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--wave4-color)" opacity="1" />
-                    </g>
-                </svg>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My favorite Skills</span>
+            <div class="skills__container container grid section__border">
+                <!--==================== SKILLS 1====================-->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i>Back-End Developer
+                    </h3>
+                    <div class="skills__info">
+
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/go.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                Golang
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/gokit.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                Gokit
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/git-icon.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                Git
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/linux.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                Linux
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/download.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                PostgresSql
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/grpc.jpeg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                gRPC
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/microservice.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                Microservices
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/graphql.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                GraphQL
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/html.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                HTML
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/javascript.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                Javascript
+                            </h3>
+                            <span class="skill__subtitle">
+                                Basic
+                            </span>
+                        </div>
+
+
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/mongo.jpeg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                MongoDB
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="images/java (1).svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">
+                                Java
+                            </h3>
+                            <span class="skill__subtitle">
+                                Intermediate
+                            </span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Experience & education</span>
+
+            <div class="qualification__container container grid section__border">
+                <div class="qualification_content">
+                    <h3 class="qualification__title">
+                        <i class="ri-pencil-ruler-2-line"></i> Education
+                    </h3>
+
+                    <div class="qualification__info">
+
+                        <h3 class="qualification__name">
+                            Bachelors of Technololgy in Electronics and communication
+                        </h3>
+                        <span class="qualification__country">Visvesvaraya Technological University ,India</span>
+                        <span class="qualification__year">2018-2022</span>
+                    </div>
+                </div>
+
+                <div class="qualification_content">
+                    <h3 class="qualification__title">
+                        <i class="ri-building-2-line"></i> Work
+                    </h3>
+                    <div class="qualification__info">
+
+                        <h3 class="qualification__name">
+                            Golang Developer
+                        </h3>
+                        <span class="qualification__country">Brototype,India</span>
+                        <span class="qualification__year">2022-2023</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            </div>
+            <img src="images/shape-circle.svg" alt="qualification image" class="qualification__img">
+        </section>
+
+        <!--==================== SERVICES ====================-->
+        <section class="services section" id="services">
+
+            <h2 class="section__title">Services</h2>
+            <span class="section__subtitle">What i offer</span>
+
+            <div class="services__container container grid section__border">
+
+                <div class="services__card">
+                    <i class="ri-code-s-line"></i>
+                    <h2 class="services_title">
+
+                        Web developement
+
+                    </h2>
+
+                    <p class="services__description">
+                        I specialize in backend web development using Go, building microservices, and implementing
+                        concurrent programs.
+                    </p>
+                    <div class="services__border">
+
+                    </div>
+                </div>
+
+
+                <div class="services__card">
+                    <i class="ri-code-s-line"></i>
+                    <h2 class="services_title">
+
+                        CLI tool Designing
+                    </h2>
+
+                    <p class="services__description">
+                        Designing a CLI tool using Go for beginners at the system level. </p>
+                    <div class="services__border">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Static&Responsive Web Projects</h2>
+            <span class="section__subtitle">Most recent work</span>
+            <div class="container section__border">
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
+                        <!--==================== PROJECT 1 ====================-->
+
+                        <div class="projects__content swiper-slide">
+                            <img src="images/portfolio1.webp" alt="project image" class="projects__img">
+                            <div><span class="project__subtitle">web</span>
+                                <h1 class="projects__title"> pro1 </h1>
+
+                                <a href="" class="projects__button">
+                                    View demo <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="projects__content swiper-slide">
+                            <img src="images/portfolio1.webp" alt="project image" class="projects__img">
+                            <div><span class="project__subtitle">web</span>
+                                <h1 class="projects__title"> pro1 </h1>
+
+                                <a href="" class="projects__button">
+                                    View demo <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="projects__content swiper-slide">
+                            <img src="images/portfolio1.webp" alt="project image" class="projects__img">
+                            <div><span class="project__subtitle">web</span>
+                                <h1 class="projects__title"> pro1 </h1>
+
+                                <a href="" class="projects__button">
+                                    View demo <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="projects__content swiper-slide">
+                            <img src="images/portfolio1.webp" alt="project image" class="projects__img">
+                            <div><span class="project__subtitle">web</span>
+                                <h1 class="projects__title"> pro1 </h1>
+
+                                <a href="" class="projects__button">
+                                    View demo <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- swiper arrows -->
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <!-- swiper pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
 
 
-        <!-- ===== FOOTER ===== -->
-        <footer class="footer">
 
-            <!-- ===== FOOTER TITLE ===== -->
-            <div class="content flex">
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
 
-                <p class="footer__title">ATHUN LAL</p>
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-3-line"></i>Talk to me
+                    </h3>
 
-                <!-- ===== FOOTER SOCIAL LINKS ===== -->
-                <div class="footer__social">
-                    <a href="https://www.linkedin.com/in/athun-lal-0103631ba/" target="_blank" class="footer__icon curserhover"><i class='fab fa-linkedin-in'></i></a>
-                    <a href="https://www.instagram.com/athun._/" target="_blank" class="footer__icon curserhover"><i class='fab fa-instagram'
-                            style="font-weight:600;"></i></a>
-                    <a href="https://github.com/Athunlal" target="_blank" class="footer__icon curserhover"><i class='fab fa-github'></i></a>
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">athunlalp@gmail.com</span>
+                        </div>
 
+                        <div class="contact__data">
+                            <span class="contact__data-title">Whatsapp</span>
+                            <span class="contact__data-info">+91 8086671618</span>
+                            <a href="http://wa.me/7025498334" target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i> Write me your project
+                    </h3>
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Your name</label>
+                            <input type="text" name="user_name" required placeholder="Enter your name"
+                                class="contact__form-input" id="contact-name">
+
+                        </div>
+                        <span class="contact__name" id="contact-names"></span>
+
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Email</label>
+                            <input type="email" name="user_email" required placeholder="Enter your email"
+                                class="contact__form-input" id="contact-email">
+
+                        </div>
+                        <span class="contact__email" id="contact-emails"></span>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Project</label>
+                            <textarea name="user_project" placeholder="Write your project" id="contact-project"
+                                class="contact__form-input"></textarea>
+                        </div>
+
+                        <p class="contact__message" id="contact-message">Message</p>
+                        <button type="submit" class="contact__button">
+                            Submit <i class="ri-arrow-right-up-fill"></i>
+                        </button>
+                    </form>
                 </div>
 
-                <!-- ===== FOOTER COPYRIGHT ===== -->
-                <!-- <p class="footer__copy" id="copy"></p> -->
-                <p>© 2023 Made by Athun Lal</p>
             </div>
-        </footer>
+        </section>
+    </main>
 
-        <!-- ===== INTRO ANIMATION ===== -->
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="foot__title">
+                Athun Lal
+            </h1>
+            <p>Golang Developer</p>
 
+            <ul class="footer__list">
+                <li>
+                    <a href="#home" class="footer__link">Home</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
 
-        <!-- ===== GSAP JS LIBRARY ===== -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-            integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-            crossorigin="anonymous"></script>
+            <ul class="footer__social">
+                <a href="https://www.linkedin.com/in/athunlal/" target="_blank" class="footer__social-link">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
 
-        <!-- ===== JQUERY LIBRARY ===== -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <a href="https://github.com/Athunlal" target="_blank" class="footer__social-link">
+                    <i class="ri-github-line"></i>
+                </a>
 
-        <!--===== ITYPED JS =====-->
-        <script src="https://unpkg.com/ityped@0.0.10"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-
-        <!--===== SLICK JS =====-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+                <a href="https://instagram.com/athun._?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"
+                    class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+            </ul>
+            <span class="footer__copy">
+                &#169; Copyright Athun Lal. All rights reserved
+            </span>
         </div>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="Js/swiper-bundle.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="Js/script.js"></script>
 </body>
 
 </html>
